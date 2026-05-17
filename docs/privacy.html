@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heroes Cursor — Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fafafa;
+      --card: #fff;
+      --border: #e0e0e0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #eee;
+        --muted: #aaa;
+        --bg: #121212;
+        --card: #1e1e1e;
+        --border: #333;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    h1 { font-size: 1.75rem; margin: 0 0 0.25rem; }
+    .updated { color: var(--muted); font-size: 0.9rem; margin: 0 0 2rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 { font-size: 1.1rem; margin: 0 0 0.75rem; }
+    p, ul { margin: 0 0 0.75rem; }
+    p:last-child, ul:last-child { margin-bottom: 0; }
+    ul { padding-left: 1.25rem; }
+    a { color: #2563eb; }
+    @media (prefers-color-scheme: dark) {
+      a { color: #60a5fa; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Heroes Cursor — Privacy Policy</h1>
+    <p class="updated">Last updated: May 16, 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>
+        Heroes Cursor is a browser extension that lets you choose a custom mouse cursor
+        and apply it while you browse. This policy describes what the extension does
+        with your information.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data we collect</h2>
+      <p>
+        <strong>We do not collect, sell, or transmit your personal data to any server.</strong>
+        The extension has no analytics, no accounts, and no backend.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data stored on your device</h2>
+      <p>
+        The extension saves only your selected cursor preset using
+        <code>chrome.storage.local</code> (browser local storage). This includes:
+      </p>
+      <ul>
+        <li>A cursor identifier</li>
+        <li>CSS values needed to display the cursor (and optional hover cursor)</li>
+      </ul>
+      <p>
+        This data stays on your device until you change the selection, uninstall the
+        extension, or clear extension data in your browser settings.
+      </p>
+    </section>
+
+    <section>
+      <h2>How the extension works on websites</h2>
+      <p>
+        A content script runs on pages you visit so the chosen cursor can be applied.
+        The script reads your saved preference from local storage and injects CSS to
+        change the cursor appearance. It does not read page content, passwords, form
+        fields, or browsing history, and it does not send information off your device.
+      </p>
+      <p>
+        Cursor image files are loaded from the extension package itself (not from
+        third-party websites).
+      </p>
+    </section>
+
+    <section>
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>storage</strong> — save and restore your cursor choice</li>
+        <li><strong>Host access (&lt;all_urls&gt;)</strong> — apply the cursor on the sites you visit</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Third parties</h2>
+      <p>
+        The extension does not use third-party advertising, tracking, or analytics
+        services.
+      </p>
+    </section>
+
+    <section>
+      <h2>Changes</h2>
+      <p>
+        We may update this policy from time to time. The “Last updated” date at the
+        top will reflect the latest version.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent via the
+        <a href="https://github.com/stasyago86/heroes-cursor/issues">GitHub issues</a>
+        page for this project.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
