@@ -45,5 +45,14 @@ After changes, click **Reload** on the extension card in `chrome://extensions`.
 | `manifest.json` | Extension manifest (copied to `dist` on build) |
 | `dist/` | Build output — load this folder in Chrome |
 
-Cursor lists for Knight, Barbarian, Sorceress, and Warlock are generated at build time from PNGs in `public/cursors/`. Popup order is configured in `vite.config.ts` (`*_ORDER` maps).
+Cursor lists for Knight, Barbarian, Sorceress, and Warlock are generated at build time from PNGs in `public/cursors/`. 
+Popup order is configured in `vite.config.ts` (`*_ORDER` maps).
+
+
+### Upload to Chrome Web Store
+
+```bash
+npm run build
+cd dist && zip -r ../heroes-cursor.zip . -x "*.DS_Store"
+```
 
